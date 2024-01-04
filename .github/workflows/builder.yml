@@ -27,7 +27,7 @@ jobs:
       - name: Rearrange
         run: |
           mv liferay-portal/workspaces/liferay-sample-workspace/client-extensions/* .
-          mv liferay-portal/workspaces/liferay-sample-workspace/README.mardown HOW-TO.md
+          mv liferay-portal/workspaces/liferay-sample-workspace/README.markdown HOW-TO.md
           rm -r liferay-portal
           rm *.txt
       - name: Remove prefixes
