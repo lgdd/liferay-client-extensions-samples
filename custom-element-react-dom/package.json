@@ -1,0 +1,10 @@
+{
+	"devDependencies": {
+		"serve": "^14.2.0"
+	},
+	"name": "@liferay/liferay-sample-custom-element-4",
+	"scripts": {
+		"start": "PORT=5001 serve --cors"
+	},
+	"version": "0.0.0"
+}
