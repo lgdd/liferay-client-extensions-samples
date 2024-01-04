@@ -35,7 +35,23 @@ jobs:
           for f in liferay-sample-*; do
             mv -- "$f" "${f#liferay-sample-}"
           done
-      - name: Commit Files
+      - name: Rename samples
+        run: |
+          mv custom-element-1 custom-element-vanilla-js
+          mv custom-element-2 custom-element-react-scripts
+          mv custom-element-3 custom-element-angular
+          mv custom-element-4 custom-element-react-dom
+          mv custom-element-5 custom-element-react-clayui
+          mv etc-frontend-1 etc-frontend-components
+          mv etc-frontend-2 etc-frontend-shared-utils
+          mv etc-frontend-3 etc-frontend-shared-import-map
+          mv iframe-1 iframe-counter
+          mv iframe-2 iframe-wikipedia
+          mv theme-css-1 theme-css-styled
+          mv theme-css-2 theme-css-unstyled
+          mv theme-spritemap-1 theme-spritemap-single-svg
+          mv theme-spritemap-2 theme-spritemap-multiple-svg
+      - name: Commit files
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
