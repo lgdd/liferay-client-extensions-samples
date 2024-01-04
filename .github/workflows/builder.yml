@@ -1,0 +1,44 @@
+name: builder
+
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  builder:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Clone
+        run: |
+          git clone --depth 1 --filter=blob:none --no-checkout https://github.com/liferay/liferay-portal
+      - name: Sparse Checkout
+        working-directory: ./liferay-portal
+        run: |
+          git sparse-checkout init --no-cone
+          git sparse-checkout set workspaces/liferay-sample-workspace
+          git checkout master
+      - name: Rearrange
+        run: |
+          mv liferay-portal/workspaces/liferay-sample-workspace/client-extensions/* .
+          mv liferay-portal/workspaces/liferay-sample-workspace/README.mardown HOW-TO.md
+          rm -r liferay-portal
+          rm *.txt
+      - name: Remove prefixes
+        run: |
+          for f in liferay-sample-*; do
+            mv -- "$f" "${f#liferay-sample-}"
+          done
+      - name: Commit Files
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -am "chore: auto update samples" || echo "We're good for now. See you next time!"
+          git push
