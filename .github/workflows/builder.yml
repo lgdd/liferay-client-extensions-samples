@@ -24,33 +24,30 @@ jobs:
           git sparse-checkout init --no-cone
           git sparse-checkout set workspaces/liferay-sample-workspace
           git checkout master
+      - name: Rename samples
+        working-directory: ./liferay-portal/workspaces/liferay-sample-workspace/client-extensions
+        run: |
+          mv liferay-sample-custom-element-1 liferay-sample-custom-element-vanilla-js
+          mv liferay-sample-custom-element-2 liferay-sample-custom-element-react-scripts
+          mv liferay-sample-custom-element-3 liferay-sample-custom-element-angular
+          mv liferay-sample-custom-element-4 liferay-sample-custom-element-react-dom
+          mv liferay-sample-custom-element-5 liferay-sample-custom-element-react-clayui
+          mv liferay-sample-etc-frontend-1 liferay-sample-etc-frontend-components
+          mv liferay-sample-etc-frontend-2 liferay-sample-etc-frontend-shared-utils
+          mv liferay-sample-etc-frontend-3 liferay-sample-etc-frontend-shared-import-map
+          mv liferay-sample-iframe-1 liferay-sample-iframe-counter
+          mv liferay-sample-iframe-2 liferay-sample-iframe-wikipedia
+          mv liferay-sample-theme-css-1 liferay-sample-theme-css-styled
+          mv liferay-sample-theme-css-2 liferay-sample-theme-css-unstyled
+          mv liferay-sample-theme-spritemap-1 liferay-sample-theme-spritemap-single-svg
+          mv liferay-sample-theme-spritemap-2 liferay-sample-theme-spritemap-multiple-svg
       - name: Rearrange
         run: |
+          rm -r liferay-sample-*
           mv liferay-portal/workspaces/liferay-sample-workspace/client-extensions/* .
           mv liferay-portal/workspaces/liferay-sample-workspace/README.markdown HOW-TO.md
           rm -r liferay-portal
           rm *.txt
-      - name: Remove prefixes
-        run: |
-          for f in liferay-sample-*; do
-            mv -- "$f" "${f#liferay-sample-}"
-          done
-      - name: Rename samples
-        run: |
-          mv custom-element-1 custom-element-vanilla-js
-          mv custom-element-2 custom-element-react-scripts
-          mv custom-element-3 custom-element-angular
-          mv custom-element-4 custom-element-react-dom
-          mv custom-element-5 custom-element-react-clayui
-          mv etc-frontend-1 etc-frontend-components
-          mv etc-frontend-2 etc-frontend-shared-utils
-          mv etc-frontend-3 etc-frontend-shared-import-map
-          mv iframe-1 iframe-counter
-          mv iframe-2 iframe-wikipedia
-          mv theme-css-1 theme-css-styled
-          mv theme-css-2 theme-css-unstyled
-          mv theme-spritemap-1 theme-spritemap-single-svg
-          mv theme-spritemap-2 theme-spritemap-multiple-svg
       - name: Commit files
         run: |
           git config --global user.name 'github-actions[bot]'
