@@ -27,7 +27,3 @@ The new naming is an arbitrary choice based on the description provided by Lifer
 | theme-css-2       | theme-css-unstyled             |
 | theme-spritemap-1 | theme-spritemap-single-svg     |
 | theme-spritemap-2 | theme-spritemap-multiple-svg   |
-
-## License
-
-[MIT](LICENSE)
