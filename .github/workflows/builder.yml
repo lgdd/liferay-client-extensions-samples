@@ -43,7 +43,7 @@ jobs:
           mv liferay-sample-theme-spritemap-2 liferay-sample-theme-spritemap-multiple-svg
       - name: Rearrange
         run: |
-          rm -r liferay-sample-*
+          rm -r liferay-sample-* || echo "nothing to remove"
           mv liferay-portal/workspaces/liferay-sample-workspace/client-extensions/* .
           mv liferay-portal/workspaces/liferay-sample-workspace/README.markdown HOW-TO.md
           rm -r liferay-portal
