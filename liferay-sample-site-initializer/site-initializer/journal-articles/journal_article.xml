@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US" version="1.0">
+	<dynamic-element field-reference="content" index-type="text" instance-id="GKKObGjN" name="content" type="rich_text">
+		<dynamic-content language-id="en_US">
+			<![CDATA[
+				Go to this <a href="https://github.com/liferay/liferay-portal/tree/master/modules/apps/site-initializer/site-initializer-extender/site-initializer-extender-test-bundle-1/src/main/resources/site-initializer" target="_blank">link</a> to see what else can be imported by site initializers.
+			]]>
+		</dynamic-content>
+	</dynamic-element>
+</root>
