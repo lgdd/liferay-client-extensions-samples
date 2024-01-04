@@ -1,7 +1,0 @@
-assemble:
-    - from: assets
-      into: static
-liferay-sample-global-js:
-    name: Liferay Sample Global JS
-    type: globalJS
-    url: global.js

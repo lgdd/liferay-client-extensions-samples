@@ -1,6 +1,0 @@
-assemble:
-    - from: assets
-      into: static
-liferay-sample-static-content:
-    name: Liferay Sample Static Content
-    type: staticContent
