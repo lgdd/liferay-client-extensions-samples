@@ -11,19 +11,19 @@ The official readme file for those samples is mirrored in the [HOW-TO.md](HOW-TO
 
 The new naming is an arbitrary choice based on the description provided by Liferay in the readme file. Here's the correspondance for the renamed client extensions:
 
-| **Original name** | **New name**                   |
-|-------------------|--------------------------------|
-| custom-element-1  | custom-element-vanilla-js      |
-| custom-element-2  | custom-element-react-scripts   |
-| custom-element-3  | custom-element-angular         |
-| custom-element-4  | custom-element-react-dom       |
-| custom-element-5  | custom-element-react-clayui    |
-| etc-frontend-1    | etc-frontend-components        |
-| etc-frontend-2    | etc-frontend-shared-utils      |
-| etc-frontend-3    | etc-frontend-shared-import-map |
-| iframe-1          | iframe-counter                 |
-| iframe-2          | iframe-wikipedia               |
-| theme-css-1       | theme-css-styled               |
-| theme-css-2       | theme-css-unstyled             |
-| theme-spritemap-1 | theme-spritemap-single-svg     |
-| theme-spritemap-2 | theme-spritemap-multiple-svg   |
+| **Original name** | **New name**                                                 |
+|-------------------|--------------------------------------------------------------|
+| liferay-sample-custom-element-1  | liferay-sample-custom-element-vanilla-js      |
+| liferay-sample-custom-element-2  | liferay-sample-custom-element-react-scripts   |
+| liferay-sample-custom-element-3  | liferay-sample-custom-element-angular         |
+| liferay-sample-custom-element-4  | liferay-sample-custom-element-react-dom       |
+| liferay-sample-custom-element-5  | liferay-sample-custom-element-react-clayui    |
+| liferay-sample-etc-frontend-1    | liferay-sample-etc-frontend-components        |
+| liferay-sample-etc-frontend-2    | liferay-sample-etc-frontend-shared-utils      |
+| liferay-sample-etc-frontend-3    | liferay-sample-etc-frontend-shared-import-map |
+| liferay-sample-iframe-1          | liferay-sample-iframe-counter                 |
+| liferay-sample-iframe-2          | liferay-sample-iframe-wikipedia               |
+| liferay-sample-theme-css-1       | liferay-sample-theme-css-styled               |
+| liferay-sample-theme-css-2       | liferay-sample-theme-css-unstyled             |
+| liferay-sample-theme-spritemap-1 | liferay-sample-theme-spritemap-single-svg     |
+| liferay-sample-theme-spritemap-2 | liferay-sample-theme-spritemap-multiple-svg   |
