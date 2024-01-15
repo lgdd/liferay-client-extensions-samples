@@ -1,14 +1,13 @@
 {
 	"dependencies": {
-		"@liferay/js-api": "0.6.0-pre.0",
 		"serve": "^14.2.0"
 	},
-	"description": "Liferay Sample FDS Filter",
+	"description": "Liferay Sample Editor Config Contributor",
 	"devDependencies": {
 		"typescript": "^5.0.4"
 	},
 	"main": "./src/index.ts",
-	"name": "@liferay/liferay-sample-fds-filter",
+	"name": "@liferay/liferay-sample-editor-config-contributor",
 	"scripts": {
 		"build": "tsc",
 		"start": "PORT=3000 serve --cors",
