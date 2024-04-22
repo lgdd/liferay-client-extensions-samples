@@ -32,9 +32,7 @@ jobs:
           mv liferay-sample-custom-element-3 liferay-sample-custom-element-angular
           mv liferay-sample-custom-element-4 liferay-sample-custom-element-react-dom
           mv liferay-sample-custom-element-5 liferay-sample-custom-element-react-clayui
-          mv liferay-sample-etc-frontend-1 liferay-sample-etc-frontend-components
-          mv liferay-sample-etc-frontend-2 liferay-sample-etc-frontend-shared-utils
-          mv liferay-sample-etc-frontend-3 liferay-sample-etc-frontend-shared-import-map
+          mv liferay-sample-etc-frontend liferay-sample-etc-frontend-shared-import-map
           mv liferay-sample-iframe-1 liferay-sample-iframe-counter
           mv liferay-sample-iframe-2 liferay-sample-iframe-wikipedia
           mv liferay-sample-theme-css-1 liferay-sample-theme-css-styled
