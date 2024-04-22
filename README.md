@@ -18,13 +18,12 @@ The new naming is an arbitrary choice based on the description provided by Lifer
 | liferay-sample-custom-element-3  | liferay-sample-custom-element-angular         |
 | liferay-sample-custom-element-4  | liferay-sample-custom-element-react-dom       |
 | liferay-sample-custom-element-5  | liferay-sample-custom-element-react-clayui    |
-| liferay-sample-etc-frontend-1    | liferay-sample-etc-frontend-components        |
-| liferay-sample-etc-frontend-2    | liferay-sample-etc-frontend-shared-utils      |
-| liferay-sample-etc-frontend-3    | liferay-sample-etc-frontend-shared-import-map |
+| liferay-sample-etc-frontend      | liferay-sample-etc-frontend-shared-import-map |
 | liferay-sample-iframe-1          | liferay-sample-iframe-counter                 |
 | liferay-sample-iframe-2          | liferay-sample-iframe-wikipedia               |
 | liferay-sample-theme-css-1       | liferay-sample-theme-css-styled               |
 | liferay-sample-theme-css-2       | liferay-sample-theme-css-unstyled             |
+| liferay-sample-theme-css-3       | liferay-sample-theme-css-token-definition     |
 | liferay-sample-theme-spritemap-1 | liferay-sample-theme-spritemap-single-svg     |
 | liferay-sample-theme-spritemap-2 | liferay-sample-theme-spritemap-multiple-svg   |
 
