@@ -82,17 +82,9 @@ For `liferay-sample-etc-cron` and `liferay-sample-etc-spring-boot` the third typ
 
 	1. Go to `liferay-sample-workspace/client-extensions/liferay-sample-etc-cron` and type `./gradlew bootRun` to start Spring Boot.
 
-- *liferay-sample-etc-frontend-1*
+- *liferay-sample-etc-frontend*
 
-	Combine multiple frontend client extensions.
-
-- *liferay-sample-etc-frontend-2*
-
-	Combine multiple frontend client extensions that use `shared-utils.js` without duplicating or rerequesting it.
-
-- *liferay-sample-etc-frontend-3*
-
-	Share code through an import map client extension.
+	Share code via JavaScript import maps to a custom element.
 
 - *liferay-sample-etc-node*
 
@@ -132,7 +124,7 @@ For `liferay-sample-etc-cron` and `liferay-sample-etc-spring-boot` the third typ
 
 - *liferay-sample-js-import-maps-entry*
 
-	TODO
+	Share jQuery via JavaScript import maps.
 
 - *liferay-sample-site-initializer*
 
@@ -149,6 +141,10 @@ For `liferay-sample-etc-cron` and `liferay-sample-etc-spring-boot` the third typ
 - *liferay-sample-theme-css-2*
 
 	Extend a theme's CSS with a CSS that uses `unstyled` as its base theme.
+
+- *liferay-sample-theme-css-3*
+
+	Extend a theme's CSS with CSS that uses a frontend-token-definition.json file.
 
 - *liferay-sample-theme-favicon*
 
