@@ -37,6 +37,7 @@ jobs:
           mv liferay-sample-iframe-2 liferay-sample-iframe-wikipedia
           mv liferay-sample-theme-css-1 liferay-sample-theme-css-styled
           mv liferay-sample-theme-css-2 liferay-sample-theme-css-unstyled
+          mv liferay-sample-theme-css-3 liferay-sample-theme-css-token-definition
           mv liferay-sample-theme-spritemap-1 liferay-sample-theme-spritemap-single-svg
           mv liferay-sample-theme-spritemap-2 liferay-sample-theme-spritemap-multiple-svg
       - name: Rearrange
