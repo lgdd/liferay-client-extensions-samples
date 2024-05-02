@@ -3,11 +3,10 @@
 		"webpack": "5.90.1",
 		"webpack-cli": "5.1.4"
 	},
-	"name": "@liferay/liferay-sample-etc-frontend",
+	"name": "@liferay/liferay-sample-global-js-1",
 	"private": true,
 	"scripts": {
-		"build": "webpack",
-		"start": "webpack-dev-server"
+		"build": "webpack"
 	},
 	"version": "0.0.0"
 }

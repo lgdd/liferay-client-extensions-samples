@@ -11,7 +11,7 @@ import fetch from 'node-fetch';
 import config from './configTreePath.js';
 import {logger} from './logger.js';
 
-const domains = config['com.liferay.lxc.dxp.domains'];
+const domains = config['com.liferay.lxc.dxp.domains'].split('\n');
 const externalReferenceCode = config[
 	'liferay.oauth.application.external.reference.codes'
 ].split(',')[0];
@@ -23,9 +23,9 @@ const uriPath =
 
 const oauth2JWKSURI = `${lxcDXPServerProtocol}://${lxcDXPMainDomain}${uriPath}`;
 
-const allowList = domains
-	.split(',')
-	.map((domain) => `${lxcDXPServerProtocol}://${domain}`);
+const allowList = domains.map(
+	(domain) => `${lxcDXPServerProtocol}://${domain}`
+);
 
 const corsOptions = {
 	origin(origin, callback) {
