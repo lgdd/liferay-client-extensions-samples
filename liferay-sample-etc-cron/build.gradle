@@ -19,10 +19,18 @@ apply plugin: "com.liferay.source.formatter"
 apply plugin: "java-library"
 apply plugin: "org.springframework.boot"
 
+bootRun {
+	environment "EXTERNAL_LIFERAY_OAUTH2_HEADLESS_SERVER_CLIENT_ID", "myclientid"
+	environment "EXTERNAL_LIFERAY_OAUTH2_HEADLESS_SERVER_CLIENT_SECRET", "myclientsecret"
+	environment "EXTERNAL_LIFERAY_OAUTH2_HEADLESS_SERVER_HOME_PAGE_URL", "https://myhomepage.com"
+	environment "EXTERNAL_LIFERAY_OAUTH2_TOKEN_URI", "https://myhomepage.com/o/oauth2/token"
+}
+
 dependencies {
 	implementation group: "com.liferay", name: "com.liferay.client.extension.util.spring.boot", version: "latest.release"
 	implementation group: "com.liferay", name: "com.liferay.headless.admin.user.client", version: "latest.release"
 	implementation group: "com.liferay", name: "com.liferay.headless.delivery.client", version: "latest.release"
+	implementation group: "com.liferay", name: "com.liferay.petra.string", version: "latest.release"
 	implementation group: "com.liferay", name: "org.apache.commons.logging", version: "1.2.LIFERAY-PATCHED-2"
 	implementation group: "org.springframework.boot", name: "spring-boot", version: "2.7.18"
 	implementation group: "org.springframework.boot", name: "spring-boot-starter-oauth2-client", version: "2.7.18"
