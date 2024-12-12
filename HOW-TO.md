@@ -144,15 +144,19 @@ For `liferay-sample-etc-cron` and `liferay-sample-etc-spring-boot` the third typ
 
 - *liferay-sample-theme-css-1*
 
-	Extend a theme's CSS with a CSS that uses `styled` as its base theme.
+	Extend the CSS of the `styled` theme.
 
 - *liferay-sample-theme-css-2*
 
-	Extend a theme's CSS with a CSS that uses `unstyled` as its base theme.
+	Extend the CSS of the `styled` theme and apply it to admin pages.
 
 - *liferay-sample-theme-css-3*
 
-	Extend a theme's CSS with CSS that uses a frontend-token-definition.json file.
+	Extend the CSS of the `unstyled` theme.
+
+- *liferay-sample-theme-css-4*
+
+	Extend the CSS of the `unstyled` theme and provide frontend token definitions.
 
 - *liferay-sample-theme-favicon*
 
