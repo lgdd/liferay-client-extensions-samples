@@ -1,3 +1,5 @@
+[![new](https://img.shields.io/badge/NEW-More%20Samples-blueviolet)](https://github.com/lgdd/liferay-client-extensions-extra-samples)
+
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lgdd/liferay-client-extensions-samples/builder.yml?label=auto-update&style=flat)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lgdd/liferay-client-extensions-samples?color=informational&label=latest%20update)
 
