@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: (c) 2024 Liferay, Inc. https://liferay.com
+ * SPDX-FileCopyrightText: (c) 2025 Liferay, Inc. https://liferay.com
  * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
  */
 
@@ -22,11 +22,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author Crescenzo Rega
+ * @author Ivica Cardic
  */
-@RequestMapping("/cancel")
+@RequestMapping("/name")
 @RestController
-public class CancelRestController extends BaseRestController {
+public class NameRestController extends BaseRestController {
 
 	@PostMapping
 	public ResponseEntity<String> post(
@@ -37,12 +37,11 @@ public class CancelRestController extends BaseRestController {
 		return new ResponseEntity<>(
 			new JSONObject(
 			).put(
-				"paymentStatus", 8
+				"name", "Sample Tax Engine"
 			).toString(),
 			HttpStatus.OK);
 	}
 
-	private static final Log _log = LogFactory.getLog(
-		CancelRestController.class);
+	private static final Log _log = LogFactory.getLog(NameRestController.class);
 
 }

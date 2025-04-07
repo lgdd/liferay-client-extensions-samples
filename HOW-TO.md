@@ -42,6 +42,10 @@ For `liferay-sample-etc-cron` and `liferay-sample-etc-spring-boot` the third typ
 
 	Use Spring Boot to provide a new commerce shipping engine.
 
+- *liferay-sample-commerce-tax-engine*
+
+	Use Spring Boot to provide a new commerce tax engine.
+
 - *liferay-sample-custom-element-1*
 
 	A custom element can be self contained (i.e. does not depend on any external packages).

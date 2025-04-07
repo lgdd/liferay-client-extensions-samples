@@ -5,6 +5,8 @@
 
 package com.liferay.sample;
 
+import com.liferay.client.extension.util.spring.boot3.BaseRestController;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -42,7 +44,7 @@ public class OptionLabelRestController extends BaseRestController {
 		return new ResponseEntity<>(
 			new JSONObject(
 			).put(
-				"name", "Shipping Option Name"
+				"name", "Sample Shipping Option"
 			).toString(),
 			HttpStatus.OK);
 	}
