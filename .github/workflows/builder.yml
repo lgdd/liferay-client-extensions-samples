@@ -1,4 +1,4 @@
-name: builder
+name: Auto update client extensions samples
 
 on:
   push:
@@ -48,7 +48,6 @@ jobs:
         run: |
           rm -r liferay-sample-* || echo "nothing to remove"
           mv liferay-portal/workspaces/liferay-sample-workspace/client-extensions/* .
-          mv liferay-portal/workspaces/liferay-sample-workspace/README.markdown HOW-TO.md
           rm -r liferay-portal
           rm *.txt
       - name: Commit files
