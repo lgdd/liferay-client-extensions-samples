@@ -6,7 +6,8 @@
 package com.liferay.sample;
 
 import com.liferay.client.extension.util.spring.boot3.BaseRestController;
-import com.liferay.client.extension.util.spring.boot3.LiferayOAuth2AccessTokenManager;
+import com.liferay.client.extension.util.spring.boot3.client.LiferayOAuth2AccessTokenManager;
+import com.liferay.client.extension.util.spring.boot3.client.LiferayOAuth2Util;
 import com.liferay.headless.admin.user.client.dto.v1_0.Site;
 import com.liferay.headless.admin.user.client.resource.v1_0.SiteResource;
 import com.liferay.headless.delivery.client.dto.v1_0.MessageBoardThread;
@@ -52,12 +53,14 @@ public class SampleCommandLineRunner
 
 		// Call another Liferay
 
-		try {
-			_countMessageBoardThreads(
-				"external-liferay", _externalLiferayHomePageURL);
-		}
-		catch (Exception exception) {
-			_log.error(exception);
+		if (_externalLiferayHomePageURL != null) {
+			try {
+				_countMessageBoardThreads(
+					"external-liferay", _externalLiferayHomePageURL);
+			}
+			catch (Exception exception) {
+				_log.error(exception);
+			}
 		}
 
 		// Call another client extension (liferay-sample-etc-spring-boot)
@@ -82,7 +85,15 @@ public class SampleCommandLineRunner
 
 	@Override
 	protected String getWebClientBaseURL() {
-		return _liferaySampleEtcSpringBootHomePageURL.toString();
+		String homePageURL = LiferayOAuth2Util.getHomePageURL(
+			"liferay-sample-etc-spring-boot-oauth-application-user-agent",
+			_lxcDXPMainDomain, _lxcDXPServerProtocol);
+
+		if (_log.isDebugEnabled()) {
+			_log.debug("Home page URL: " + homePageURL);
+		}
+
+		return homePageURL;
 	}
 
 	private void _countMessageBoardThreads(
@@ -151,14 +162,11 @@ public class SampleCommandLineRunner
 	private static final Log _log = LogFactory.getLog(
 		SampleCommandLineRunner.class);
 
-	@Value("${external.liferay.oauth2.headless.server.home.page.url}")
+	@Value("${external.liferay.oauth2.headless.server.home.page.url:#{null}}")
 	private URL _externalLiferayHomePageURL;
 
 	@Autowired
 	private LiferayOAuth2AccessTokenManager _liferayOAuth2AccessTokenManager;
-
-	@Value("${liferay.sample.etc.spring.boot.home.page.url}")
-	private URL _liferaySampleEtcSpringBootHomePageURL;
 
 	@Value("${com.liferay.lxc.dxp.mainDomain}")
 	private String _lxcDXPMainDomain;
