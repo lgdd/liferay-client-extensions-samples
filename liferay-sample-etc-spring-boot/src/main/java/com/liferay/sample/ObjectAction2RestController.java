@@ -48,8 +48,9 @@ public class ObjectAction2RestController extends BaseRestController {
 					"alternateName",
 					modelDTOAccountJSONObject.getString("givenName")
 				).toString(),
-				"/o/headless-admin-user/v1.0/user-accounts/" +
-					modelDTOAccountJSONObject.getLong("id")),
+				createURI(
+					"/o/headless-admin-user/v1.0/user-accounts/",
+					modelDTOAccountJSONObject.getLong("id"))),
 			HttpStatus.OK);
 	}
 

@@ -38,8 +38,9 @@ public class ActionRestController extends BaseRestController {
 				).put(
 					"purchaseOrderNumber", jsonObject.getString("pon")
 				).toString(),
-				"/o/headless-commerce-delivery-cart/v1.0/carts/" +
-					jsonObject.getLong("commerceOrderId")),
+				createURI(
+					"/o/headless-commerce-delivery-cart/v1.0/carts/",
+					jsonObject.getLong("commerceOrderId"))),
 			HttpStatus.OK);
 	}
 

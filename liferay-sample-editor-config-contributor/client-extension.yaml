@@ -8,6 +8,7 @@ liferay-sample-editor-config-contributor:
         -   sampleAlloyEditor
         -   sampleClassicEditor
         -   sampleLegacyEditor
+        -   sampleReactCKEditor5ClassicEditor
         -   sampleReactClassicEditor
     name: Liferay Sample Editor Config Contributor
     type: editorConfigContributor

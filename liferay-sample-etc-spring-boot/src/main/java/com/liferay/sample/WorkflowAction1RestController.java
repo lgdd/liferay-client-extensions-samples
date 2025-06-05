@@ -42,7 +42,7 @@ public class WorkflowAction1RestController extends BaseRestController {
 		String response = post(
 			"Bearer " + jwt.getTokenValue(),
 			"{\"transitionName\": \"approve\"}",
-			jsonObject.getString("transitionURL"));
+			createURI(jsonObject.getString("transitionURL")));
 
 		if (_log.isInfoEnabled()) {
 			_log.info("Output: " + response);

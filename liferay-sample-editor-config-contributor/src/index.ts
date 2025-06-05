@@ -10,6 +10,40 @@ import {
 
 const editorConfigTransformer: EditorConfigTransformer<any> = (config) => {
 
+	// CKEditor 5
+
+	if (config?.editorType === 'ckeditor5') {
+		const separator = '|';
+		const toolbar = [
+			'AccessibilityHelp',
+			separator,
+			'undo',
+			'redo',
+			separator,
+			{
+				icon: 'text',
+				items: ['bold', 'italic', 'underline'],
+				label: 'A dropdown with a custom icon',
+			},
+			separator,
+			{
+
+				// This dropdown has the icon disabled and a text label instead.
+
+				icon: false,
+				items: ['bulletedList', 'numberedList'],
+				label: 'Lists',
+			},
+		];
+
+		const updatedConfig = {
+			...config,
+			toolbar,
+		};
+
+		return updatedConfig;
+	}
+
 	// Alloy Editor
 
 	const toolbars: any = config.toolbars;
