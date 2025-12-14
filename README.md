@@ -9,7 +9,7 @@ Automatically mirror official client extensions samples you can find in the main
 
 The goal of this repository is to ease the process of trying out client extensions samples by removing the burden of cloning liferay-portal & by renaming ambiguous client extensions (e.g. `custom-element-1`).
 
-The official readme file for those samples is mirrored in the [HOW-TO.md](HOW-TO.md).
+The official readme file for those samples can be found [here](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/README.md).
 
 The new naming is an arbitrary choice based on the description provided by Liferay in the readme file. Here's the correspondance for the renamed client extensions:
 
