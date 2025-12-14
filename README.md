@@ -21,7 +21,7 @@ The new naming is an arbitrary choice based on the description provided by Lifer
 | liferay-sample-custom-element-4  | liferay-sample-custom-element-react-dom       			|
 | liferay-sample-custom-element-5  | liferay-sample-custom-element-react-clayui    			|
 | liferay-sample-etc-frontend      | liferay-sample-etc-frontend-shared-import-map 			|
-| liferay-sample-global-css-1       | liferay-sample-global-js-company			           	|
+| liferay-sample-global-css-1       | liferay-sample-global-css-company			           	|
 | liferay-sample-global-css-2       | liferay-sample-global-css-page			           	|
 | liferay-sample-global-js-1       | liferay-sample-global-js-page			           		|
 | liferay-sample-global-js-2       | liferay-sample-global-js-page-with-attributes 			|
