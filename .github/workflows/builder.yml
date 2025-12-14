@@ -33,6 +33,8 @@ jobs:
           mv liferay-sample-custom-element-4 liferay-sample-custom-element-react-dom
           mv liferay-sample-custom-element-5 liferay-sample-custom-element-react-clayui
           mv liferay-sample-etc-frontend liferay-sample-etc-frontend-shared-import-map
+          mv liferay-sample-global-css-1 liferay-sample-global-css-company
+          mv liferay-sample-global-css-2 liferay-sample-global-css-page
           mv liferay-sample-global-js-1 liferay-sample-global-js-page
           mv liferay-sample-global-js-2 liferay-sample-global-js-page-with-attributes
           mv liferay-sample-global-js-3 liferay-sample-global-js-instance
