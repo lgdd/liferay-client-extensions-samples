@@ -20,6 +20,7 @@ The new naming is an arbitrary choice based on the description provided by Lifer
 | liferay-sample-custom-element-3  | liferay-sample-custom-element-angular         			|
 | liferay-sample-custom-element-4  | liferay-sample-custom-element-react-dom       			|
 | liferay-sample-custom-element-5  | liferay-sample-custom-element-react-clayui    			|
+| liferay-sample-custom-element-6  | liferay-sample-custom-element-react-vite    			|
 | liferay-sample-etc-frontend      | liferay-sample-etc-frontend-shared-import-map 			|
 | liferay-sample-global-css-1       | liferay-sample-global-css-company			           	|
 | liferay-sample-global-css-2       | liferay-sample-global-css-page			           	|
