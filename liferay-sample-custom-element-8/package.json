@@ -10,7 +10,7 @@
 		"esbuild": "^0.20.2",
 		"typescript": "5.7.2"
 	},
-	"name": "@liferay/liferay-sample-custom-element-7",
+	"name": "@liferay/liferay-sample-custom-element-8",
 	"private": true,
 	"scripts": {
 		"build": "esbuild src/index.tsx --bundle --entry-names=[name].[hash] --external:@liferay/frontend-data-set-web/api --external:react --external:react-dom --format=esm --outdir=build/static"
